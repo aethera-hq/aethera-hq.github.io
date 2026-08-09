@@ -22,6 +22,15 @@ replace the whole figure with an `img` tag and keep the sizing class:
 
 Slots currently reserved: hero, workshop, competition pit, and four portraits.
 
+There is also a 16:9 video slot in the "What we do" section for custom-competition
+footage. Replace `<div class="frame frame-video">...</div>` with either a local file:
+
+    <video class="frame-video" controls preload="metadata" poster="assets/comp-poster.jpg">
+      <source src="assets/custom-competition-2026.mp4" type="video/mp4">
+    </video>
+
+or an iframe embed. Keep the `frame-video` class so the aspect ratio holds.
+
 **Before publishing photographs of students, get signed parental media consent.**
 
 ## Deploying to Cloudflare Pages
