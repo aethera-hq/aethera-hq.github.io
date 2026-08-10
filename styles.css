@@ -524,3 +524,45 @@ a { color: var(--teal-deep); }
   color: var(--ink-soft);
   margin-top: 0.85rem;
 }
+
+/* ---------- Widening scope ----------
+   Each level indents further than the last, because the scope of what
+   a student is responsible for actually does widen. The rule alongside
+   deepens in colour as the responsibility grows. */
+.scope { margin-top: 3.2rem; }
+
+.scope li {
+  border-left: 2px solid var(--rule);
+  padding: 0.2rem 0 1.6rem 1.5rem;
+  margin-bottom: 1.6rem;
+  max-width: 46rem;
+}
+.scope li.scope-2 { margin-left: clamp(1rem, 4vw, 4.5rem); border-left-color: var(--teal); }
+.scope li.scope-3 { margin-left: clamp(2rem, 8vw, 9rem); border-left-color: var(--marigold); }
+
+.scope h3 {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 22;
+  font-size: clamp(1.2rem, 1rem + 0.7vw, 1.55rem);
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+}
+.scope p { color: var(--ink-soft); }
+
+/* ---------- The one dark section ----------
+   Reserved for the moment the page tells families it may not be for
+   them. Spending the contrast here is deliberate: it is the pivot. */
+.section-dark {
+  background-color: var(--ink);
+  color: var(--paper);
+  background-image:
+    linear-gradient(rgba(253, 250, 246, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(253, 250, 246, 0.045) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+.section-dark .eyebrow { color: var(--marigold); }
+.section-dark .section-lede { color: rgba(253, 250, 246, 0.76); }
+.section-dark .section-lede + .section-lede { margin-top: 1.3rem; }
+
+.fit-inner .h2 { max-width: 24ch; }
+.fit-inner .section-lede { max-width: 60ch; }
