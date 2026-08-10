@@ -1,0 +1,3 @@
+# Preview build. Remove the Disallow below when launching on the real domain.
+User-agent: *
+Disallow: /
