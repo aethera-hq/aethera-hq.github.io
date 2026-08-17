@@ -14,24 +14,33 @@ To preview locally, open `index.html` in a browser, or run:
 
 ## Adding photographs
 
-Every photo slot is a `<figure class="frame ...">` placeholder. To use a real image,
-replace the whole figure with an `img` tag and keep the sizing class:
+Live images use `<img class="shot shot-*">`. The `shot-*` class sets the
+aspect ratio and `object-fit: cover` handles the crop, so one file works
+at every screen width:
 
-    <img class="frame frame-hero" src="assets/build-table.jpg"
-         alt="Two students fitting a gearbox at the build table">
+    <img class="shot shot-hero" src="assets/hero-field.jpg"
+         width="1600" height="1200" alt="...">
 
-Slots currently reserved: hero, workshop, competition pit, and four portraits.
+Ratios: `shot-hero` 4:3, `shot-tall` 3:4, `shot-video` 16:9.
 
-There is also a 16:9 video slot in the "What we do" section for custom-competition
-footage. Replace `<div class="frame frame-video">...</div>` with either a local file:
+Export at roughly 2x display size, JPEG quality 60, and aim to keep each
+file under 250KB.
 
-    <video class="frame-video" controls preload="metadata" poster="assets/comp-poster.jpg">
-      <source src="assets/custom-competition-2026.mp4" type="video/mp4">
-    </video>
+**Still outstanding:** the four mentor portraits, currently typographic
+monogram tiles (`<figure class="monogram">`). Replace each with:
 
-or an iframe embed. Keep the `frame-video` class so the aspect ratio holds.
+    <img class="shot shot-portrait" src="assets/portrait-michael.jpg" alt="...">
 
-**Before publishing photographs of students, get signed parental media consent.**
+and add `.shot-portrait { aspect-ratio: 1/1; margin-bottom: 1.15rem; }`
+to the stylesheet. Shoot all four in the same place and light, or the
+row reads as a collage.
+
+The video slot holds a still. To use real footage, swap the `<img>` for
+`<video class="shot shot-video" controls poster="...">`.
+
+**Before publishing photographs of students, get signed parental media
+consent.** The three images in use were chosen partly because nobody in
+them is identifiable.
 
 ## Deploying to Cloudflare Pages
 

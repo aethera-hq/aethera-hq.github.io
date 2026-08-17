@@ -80,10 +80,8 @@
       </div>
     </div>
 
-    <!-- Photo slot. Replace the whole figure with an <img> when a photograph is ready. -->
-    <figure class="frame frame-hero">
-      <span class="frame-label">Photo &mdash; students at the build table</span>
-    </figure>
+    <img class="shot shot-hero" src="assets/hero-field.jpg" width="1600" height="1200"
+         alt="A student in an Ultronic team shirt looking out across the competition field">
 
   </div>
 </section>
@@ -239,10 +237,12 @@
       </article>
     </div>
 
-    <!-- Video slot. Replace with a <video> tag or an iframe once footage is chosen. -->
+    <!-- Still stands in until competition footage is chosen. To use video, swap the
+         <img> for a <video class="shot shot-video" controls poster="..."> element. -->
     <figure class="media">
-      <div class="frame frame-video"><span class="frame-label">Video &mdash; custom competition, 2026</span></div>
-      <figcaption>A competition we designed and ran this year, start to finish.</figcaption>
+      <img class="shot shot-video" src="assets/competition-still.jpg" width="1600" height="900"
+           alt="Close-up of a competition robot, its control hub and wiring exposed, the words faster faster faster written on the chassis">
+      <figcaption>From a competition we designed and ran this year. Footage to follow.</figcaption>
     </figure>
   </div>
 </section>
@@ -332,9 +332,8 @@
       </ul>
     </div>
 
-    <figure class="frame frame-tall">
-      <span class="frame-label">Photo &mdash; workshop, tools, a robot mid-build</span>
-    </figure>
+    <img class="shot shot-tall" src="assets/workshop.jpg" width="1050" height="1400"
+         alt="Hands driving a screwdriver into a partly built robot chassis">
   </div>
 </section>
 
@@ -347,7 +346,7 @@
     <div class="people">
 
       <article class="person">
-        <figure class="frame frame-portrait"><span class="frame-label">Portrait</span></figure>
+        <figure class="monogram" aria-hidden="true"><span>M</span></figure>
         <h3>Michael</h3>
         <p class="person-role">Mentor &middot; program design</p>
         <p>FIRST Leadership Award Winner in 2025, one of ten students named worldwide that season.
@@ -357,7 +356,7 @@
       </article>
 
       <article class="person">
-        <figure class="frame frame-portrait"><span class="frame-label">Portrait</span></figure>
+        <figure class="monogram" aria-hidden="true"><span>N</span></figure>
         <h3>Natalie</h3>
         <p class="person-role">Mentor &middot; program design</p>
         <p>FIRST Leadership Award Finalist in 2026. World Championship Finalist with Java The Hutts and
@@ -366,7 +365,7 @@
       </article>
 
       <article class="person">
-        <figure class="frame frame-portrait"><span class="frame-label">Portrait</span></figure>
+        <figure class="monogram" aria-hidden="true"><span>T</span></figure>
         <h3>Tara</h3>
         <p class="person-role">Advisor</p>
         <p>Eight years coaching and judging across Florida, including at the state championship.
@@ -375,7 +374,7 @@
       </article>
 
       <article class="person">
-        <figure class="frame frame-portrait"><span class="frame-label">Portrait</span></figure>
+        <figure class="monogram" aria-hidden="true"><span>I</span></figure>
         <h3>Inigo</h3>
         <p class="person-role">Founder</p>
         <p>Chief executive of Cienaga Systems, an AI technology company. Before that he ran a technical
