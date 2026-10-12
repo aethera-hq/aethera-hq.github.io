@@ -38,7 +38,8 @@ ul, ol { list-style: none; }
 img { max-width: 100%; display: block; }
 
 /* ---------- Base ---------- */
-html { scroll-behavior: smooth; }
+/* In-page links land below the sticky header (camps bar + nav), not under it. */
+html { scroll-behavior: smooth; scroll-padding-top: 8rem; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
