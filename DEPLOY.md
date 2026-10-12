@@ -47,7 +47,7 @@ and all were empty — so nothing else can be disturbed.
 
 4. Create the repository and push:
 
-       cd /Users/inigomerino/work/aethera/website
+       cd /Users/inigomerino/Code/Aethera/aetheraconsulting-site
        gh repo create aethera-hq/aethera-hq.github.io --public --source=. --remote=origin --push
 
 5. Enable Pages:

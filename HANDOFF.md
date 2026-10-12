@@ -5,7 +5,7 @@ picking the work up cold.
 
 - **Live:** <https://aetheraconsulting.com> (also `https://aethera-hq.github.io/`)
 - **Repo:** `aethera-hq/aethera-hq.github.io`
-- **Local:** `/Users/inigomerino/work/aethera/website`
+- **Local:** `/Users/inigomerino/Code/Aethera/aetheraconsulting-site`
 - **Branch:** `main` (in sync with `origin/main`)
 - **Deploy:** push to `main` → GitHub Pages rebuilds automatically (~40s)
 
@@ -120,7 +120,7 @@ Workspace email confirmed working end to end.
 ## How to work on it
 
 ```bash
-cd /Users/inigomerino/work/aethera/website
+cd /Users/inigomerino/Code/Aethera/aetheraconsulting-site
 python3 -m http.server 8000        # preview at http://localhost:8000
 # edit index.html / styles.css
 git add -A && git commit && git push origin main   # deploys automatically
