@@ -572,3 +572,79 @@ a { color: var(--teal-deep); }
   color: var(--teal-deep);
   opacity: 0.5;
 }
+
+/* ---------- Summer camps (bar + section) ----------
+   Points families who aren't ready for the Lab to the one-week camps at
+   buildabotcamp.com. Teal bar so it reads as an announcement, not as part of
+   the Lab's own story; marigold link because it is the moment to act. */
+.camp-bar {
+  background: var(--teal-deep);
+  color: var(--paper);
+  font-size: 0.9rem;
+}
+.camp-bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem 1.5rem;
+  padding-block: 0.6rem;
+}
+.camp-bar-tag {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--marigold);
+  margin-right: 0.6rem;
+}
+.camp-bar a {
+  color: var(--paper);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--marigold);
+  white-space: nowrap;
+}
+.camp-bar a:hover { color: var(--marigold); }
+
+.camp-grid {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 2.6rem;
+  max-width: 44rem;
+}
+@media (min-width: 40rem) { .camp-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.camp-card {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--teal);
+  padding: 1.5rem 1.6rem;
+}
+.camp-age {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.camp-name {
+  font-family: var(--display);
+  font-variation-settings: "SOFT" 100, "WONK" 1, "opsz" 24;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+.camp-price {
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--teal-deep);
+}
+.camp-price span { font-size: 0.9rem; font-weight: 400; color: var(--ink-soft); }
+
+.camp-dates {
+  margin: 1.8rem 0 1.6rem;
+  color: var(--ink-soft);
+}
+
