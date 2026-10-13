@@ -1,0 +1,5 @@
+# GitHub Pages runs this site through Jekyll (its site builder), which
+# publishes every file in the repository, including notes. List here any
+# file that belongs in the repository but must not appear on the website.
+exclude:
+  - README.md

@@ -42,16 +42,15 @@ The video slot holds a still. To use real footage, swap the `<img>` for
 consent.** The three images in use were chosen partly because nobody in
 them is identifiable.
 
-## Deploying to Cloudflare Pages
+## Deploying
 
-1. Push this repository to GitHub.
-2. In the Cloudflare dashboard: Workers & Pages → Create → Pages → connect the repo.
-3. Framework preset: **None**. Build command: leave empty. Output directory: `/`.
-4. Custom domains → add `aetheraconsulting.com` and `www.aetheraconsulting.com`.
+Hosted on GitHub Pages: pushing to `main` publishes the site in about 40
+seconds. `CNAME` holds the custom domain; do not delete it.
 
-Google Workspace email keeps working as long as the existing Google MX records are
-preserved. If the domain's nameservers move to Cloudflare, re-add those MX records
-there before the change propagates.
+Handoff and deployment notes (DNS, rollback values, positioning rules) are
+kept outside this public repository, in `~/work/aethera/website-notes/` on
+the maintainer's machine. Do not commit notes here: anything in this
+repository is published on the website unless it is listed in `_config.yml`.
 
 ## Notes
 
